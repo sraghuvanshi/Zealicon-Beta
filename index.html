@@ -21,6 +21,11 @@
 </head>
 
 <body>
+
+    <!-- script need to be loaded for counter  -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
     <!-- Navbar -->
     <div class="navbar" id="navlist">
         <div class="brand"></div>
@@ -142,21 +147,35 @@
                     <div class="count">
                             <div class="row1">
                                 <div class="col1">
-                                    <p class="num">12000+</p>
+                                        <div style="display: flex;" >                                
+                                                <p class="num c-section4">120</p>
+                                                <p class="num">00+</p> 
+                                            </div> 
                                     <p class="name">Footfall</p>
                                 </div>
                                 <div class="col2">
-                                        <p class="num">250+</p>
+                                        <div style="display: flex;" >                                
+                                                <p class="num c-section4">25</p>
+                                                <p class="num">00+</p> 
+                                            </div> 
                                         <p class="name">Events</p>
                                 </div>
                             </div>
                             <div class="row2">
                                     <div class="col1">
-                                            <p class="num">2 Lac+</p>
+                                        
+                                            <div style="display: flex;" >                                
+                                                    <p class="num c-section4">200</p>
+                                                    <p class="num">00+</p> 
+                                            </div>
                                             <p class="name">Prize Pool</p>
                                     </div>
+
                                     <div class="col2">
-                                            <p class="num">8000+</p>
+                                        <div style="display: flex;" >                                
+                                            <p class="num c-section4">80</p>
+                                            <p class="num">00+</p> 
+                                        </div>                                           
                                             <p class="name">Registrations</p>
                                     </div>
                             </div>
@@ -490,6 +509,56 @@
 
             });
     </script>
+
+            <!-- counter -->
+
+
+            <script>
+                $(function () {
+                function isScrolledIntoView($elem) {
+                    var docViewTop = $(window).scrollTop();
+                    var docViewBottom = docViewTop + $(window).height();
+                    var elemTop = $elem.offset().top;
+                    var elemBottom = elemTop + $elem.height();
+                    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+                }
+            
+                function count($this) {
+                    var current = parseInt($this.html(), 10);
+                    if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
+                        $this.html(++current);
+                        $this.data("isCounting", true);
+                        setTimeout(function () {
+                            $this.data("isCounting", false);
+                            count($this);
+                        }, 6);
+                    }
+                }
+            
+                $(".c-section4").each(function () {
+                    $(this).data('count', parseInt($(this).html(), 10));
+                    $(this).html('0');
+                    $(this).data("isCounting", false);
+                });
+            
+                function startCount() {
+                    $(".c-section4").each(function () {
+                        count($(this));
+                    });
+                };
+            
+                $(window).scroll(function () {
+                    startCount();
+                });
+            
+                startCount();
+            });
+            
+            </script>
+
+
+
+
 </body>
 
 </html>
