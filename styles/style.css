@@ -605,37 +605,37 @@ body.open:after {
 }
 
 .main-slider .slide-wrap .b1 {
-  background: url("/img/Carousel (18).png");
+  background: url("/img/Carousel (18).jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main-slider .slide-wrap .b2 {
-  background: url("/img/Carousel (28).png");
+  background: url("/img/Carousel (28).jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main-slider .slide-wrap .b3 {
-  background: url("/img/Carousel (9).png");
+  background: url("/img/Carousel (9).jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main-slider .slide-wrap .b4 {
-  background: url("/img/Carousel (29).png");
+  background: url("/img/Carousel (29).jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main-slider .slide-wrap .b5 {
-  background: url("/img/Carousel (2).png");
+  background: url("/img/Carousel (2).jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .main-slider .slide-wrap .b6 {
-  background: url("/img/Carousel (21).png");
+  background: url("/img/Carousel (21).jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -843,7 +843,6 @@ body.open:after {
 }
 
 .section3 .main .high .slide .owl-carousel .owl-nav button.owl-prev {
-  background-color: #000000;
   color: #fff;
   border: none;
   padding: 0 !important;
@@ -855,11 +854,12 @@ body.open:after {
   left: 0;
   height: 70px;
   width: 45px;
-  font-size: 36px;
+  font-size: 52px;
+  outline: none;
+  text-shadow: 0px 0px 8px black;
 }
 
 .section3 .main .high .slide .owl-carousel .owl-nav button.owl-next {
-  background-color: #000000;
   color: #fff;
   border: none;
   padding: 0 !important;
@@ -871,7 +871,9 @@ body.open:after {
   right: 0;
   height: 70px;
   width: 45px;
-  font-size: 36px;
+  font-size: 52px;
+  outline: none;
+  text-shadow: 0px 0px 8px black;
 }
 
 .section3 .main .high .count {
