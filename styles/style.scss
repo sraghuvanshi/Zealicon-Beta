@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 body {
@@ -725,7 +727,7 @@ body.open:after {
   margin: 1rem auto 0;
   line-height: 1.5;
   color: #666666;
-  margin-bottom: 78px;
+  margin-bottom: 48px;
   span {
     font-family: "pnB", sans-serif;
   }
@@ -737,6 +739,13 @@ body.open:after {
   font-size: 20px;
   margin: 1rem auto 0;
   color: #888888;
+}
+
+.iframe-container {
+  margin-top: 50px;
+  display:flex;
+  justify-content: center;
+
 }
 
 @media only screen and (max-width: 770px) {
@@ -761,6 +770,19 @@ body.open:after {
   }
   .section2 .main .heading p {
     font-size: 5vw;
+  }
+  .iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1051,6 +1073,16 @@ body.open:after {
     padding-bottom: 60px;
   }
 
+  p.person {
+    color: #888888;
+    font-size: 20px;
+    span {
+      font-weight: bold;
+      // border-bottom: 5px solid yellow;
+    }
+  }
+
+
   p.contact {
     color: #888888;
     font-size: 28px;
@@ -1153,7 +1185,7 @@ body.open:after {
     }
   }
   .section4 .main .high .slide {
-    height: 30vh;
+    height: 45vh;
   }
 }
 
@@ -1246,6 +1278,10 @@ body.open:after {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  .section8 .heading h3 {
+    font-size: 1.8rem;
+  }
+
 }
 
 
@@ -1521,22 +1557,6 @@ footer .coloumn i + i {
   padding: 0 0.5em;
 }
 
-footer .gotop {
-  float: right;
-  height: 40px;
-  width: 50px;
-  background-color: #616161;
-  border-radius: 6px;
-  margin-top: -100px;
-  color: #fff;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
 
 footer .gotop a {
   text-decoration: none;
@@ -1561,4 +1581,28 @@ footer .gotop a {
     margin-top: -140px;
   }
 }
+
+// go top button 
+
+a.go-top {
+	position: fixed;
+	bottom: 2.5em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+  // background-color: rgba(0, 0, 0, 0.3);
+  background-color: #616161;
+  opacity: 0.6;
+  border-radius :6px;
+	font-size: 12px;
+	padding: 1em 1.5em;
+  display: none;
+  
+  z-index:1000;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
 /*# sourceMappingURL=style.css.map */
