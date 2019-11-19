@@ -1153,8 +1153,12 @@ body.open:after {
 .section4 .main .high .count .map {
   width: 300px;
   height: 300px;
-  -webkit-box-shadow: -2px 5px 12px 0px rgba(0, 0, 0, 0.59);
-  box-shadow: -2px 5px 12px 0px rgba(0, 0, 0, 0.59);
+}
+
+.section4 .main .high .count .map iframe {
+  -webkit-box-shadow: -2px 5px 12px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: -2px 5px 12px 0px rgba(0, 0, 0, 0.29);
+  border: 10px solid #ffffff;
 }
 
 .section4 .main .high .count .visit {
@@ -1413,7 +1417,7 @@ body.open:after {
   font-family: "gB", sans-serif;
   border-radius: 9999em 9999em 9999em 9999em;
   font-size: 0.8rem;
-  background-color: #4062E4;
+  background-color: #4062e4;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
