@@ -141,7 +141,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .hide {
     display: none;
   }
@@ -420,7 +420,7 @@ body.open:after {
   color: white;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .fullMenu {
     display: block;
   }
@@ -524,7 +524,7 @@ body.open:after {
           animation-iteration-count: infinite;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .main-slider .dark .glitch {
     font-size: 1.8em;
   }
@@ -679,7 +679,7 @@ body.open:after {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .main-slider .dark {
     width: 80vw;
     top: 25%;
@@ -774,7 +774,7 @@ body.open:after {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .section2 .main .heading {
     max-width: 90vw;
   }
@@ -1021,7 +1021,7 @@ body.open:after {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .section3 {
     background: url("/img/cm-4.png");
     background-size: cover;
@@ -1191,7 +1191,7 @@ body.open:after {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .section4 .main .heading {
     max-width: 75vw;
   }
@@ -1311,7 +1311,7 @@ body.open:after {
   color: #fff;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .section8 {
     background: url("/img/cm-1.png");
     background-size: cover;
@@ -1439,7 +1439,7 @@ body.open:after {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .section7 .main .heading {
     max-width: 90vw;
   }
@@ -1534,7 +1534,7 @@ body.open:after {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
   .section5 .main .heading {
     max-width: 75vw;
   }
