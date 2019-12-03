@@ -1185,6 +1185,21 @@ body.open:after {
   }
 }
 
+@media only screen and (max-width: 330px) {
+  .section4 .main .heading h3 {
+    margin-bottom: 6rem;
+  }
+
+  .section4 .main .high .count {
+    margin-top: 7rem;
+  }
+
+  .section4 {
+    padding-bottom: 5rem;
+  }
+}
+
+
 // form field
 
 .section8 {
