@@ -1194,6 +1194,7 @@ body.open:after {
 @media only screen and (max-width: 420px) {
   .section4 .main .heading {
     max-width: 75vw;
+    margin-bottom: 3rem;
   }
   .section4 .main .heading h3 {
     font-size: 10vw;
@@ -1211,6 +1212,7 @@ body.open:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 1rem;
   }
   .section4 .main .high .count .visit {
     margin-left: 0px;
