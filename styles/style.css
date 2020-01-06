@@ -485,11 +485,14 @@ body.open:after {
 .main-slider .dark h1.dates {
   font-size: 1.5em;
   margin-top: 2.5em;
+  text-align: center;
 }
 
 @media only screen and (max-width: 620px) {
   .main-slider .dark h1.dates {
-    display: none;
+    font-size: 1.5em;
+    width: 90%;
+    margin-top: 8.5em;
   }
 }
 

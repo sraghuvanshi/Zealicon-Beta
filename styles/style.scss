@@ -497,10 +497,17 @@ body.open:after {
     h1.dates {
       font-size: 1.5em; 
       margin-top: 2.5em;
+      // border: 2px solid red;
+      text-align: center;
     }
     @media only screen and (max-width: 620px) {
       h1.dates {
-        display: none;
+        // display: none;
+        font-size: 1.5em; 
+        width:90%;
+        margin-top: 8.5em;
+
+
       }
     }
 
